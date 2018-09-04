@@ -15,22 +15,28 @@ def check_for_errors(word):
 
 
 
-name = raw_input("Name of your character?")
+
+name = input("Name of your character?")
 check_for_errors(name)
-first_noun = raw_input("First Noun?")
+first_noun = input("First Noun?")
 check_for_errors(first_noun)
-first_adjective = raw_input("First Adjective?")
-second_noun = raw_input("Second Noun?")
-second_adjective = raw_input("Second Adjective?")
-third_noun = raw_input("Third Noun?")
-first_verb = raw_input("First Verb?")
+first_adjective = input("First Adjective?")
+check_for_errors(first_adjective)
+second_noun = input("Second Noun?")
+check_for_errors(second_noun)
+second_adjective = input("Second Adjective?")
+check_for_errors(second_adjective)
+third_noun = input("Third Noun?")
+check_for_errors(third_noun)
+first_verb = input("First Verb?")
+check_for_errors(first_verb)
 
 noun_list = [first_noun, second_noun, third_noun]
 adj_list = [first_adjective, second_adjective]
 
 random.shuffle(noun_list)
 random.shuffle(adj_list)
-random.shuffle(verb_list)
+# random.shuffle(verb_list)
 
 
 # def shuffle_list():
